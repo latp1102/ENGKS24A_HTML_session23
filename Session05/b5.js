@@ -14,7 +14,7 @@ if (isNaN(n) || n < 0) {
     let dem = 0;
 
     for (let i = 0; i < arr.length; i++) {
-        if (!isNaN(arr[i]) && arr[i].trim() !== "") { 
+        if (!isNaN(arr[i]) && arr[i] !== null && arr[i] !== "") { 
             sum += Number(arr[i]); 
             dem = 1;
         }
